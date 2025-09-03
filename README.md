@@ -27,6 +27,8 @@ To install the .NET SDK and Runtime, execute the following commands in your term
 
 1. **Install .NET SDK 8.0:**
 
+https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu-install?utm_source=chatgpt.com&tabs=dotnet9&pivots=os-linux-ubuntu-2504
+
    ```bash
    sudo apt-get update && \
    sudo apt-get install -y dotnet-sdk-8.0
@@ -39,11 +41,38 @@ To install the .NET SDK and Runtime, execute the following commands in your term
    sudo apt-get install -y aspnetcore-runtime-8.0
    ```
 
+Check installed SDKs
+```sh
+dotnet --list-sdks
+```
+
+Example output:
+```sh
+8.0.100 [/usr/share/dotnet/sdk]
+7.0.402 [/usr/share/dotnet/sdk]
+```
+Check installed Runtimes
+```sh
+dotnet --list-runtimes
+```
+
+Example output:
+```sh
+Microsoft.NETCore.App 8.0.0 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
+Microsoft.AspNetCore.App 8.0.0 [/usr/share/dotnet/shared/Microsoft.AspNetCore.App]
+```
+
+Quick version check
+```sh
+dotnet --version
+```
 ### 2. Installing MongoDB
 
 To install MongoDB, execute the following commands in your terminal:
 
 1. **Add MongoDB's GPG key and repository:**
+
+https://nspeaks.com/install-mongodb-server-in-ubuntu-24.04/?utm_source=chatgpt.com
 
    ```bash
    curl -fsSL https://www.mongodb.org/static/pgp/server-7.0.asc | \
