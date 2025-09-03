@@ -1,17 +1,6 @@
-# 3-Tier .NET & MongoDB Application
+# 3-Tier .NET & MongoDB Application 
 
 This project is a 3-tier web application built with .NET and MongoDB. The application consists of a presentation layer, a business logic layer, and a data access layer. MongoDB is used as the database to store and manage application data.
-
-## Table of Contents
-
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-  - [1. Installing .NET SDK and Runtime](#1-installing-net-sdk-and-runtime)
-  - [2. Installing MongoDB](#2-installing-mongodb)
-  - [3. Setting Up MongoDB](#3-setting-up-mongodb)
-- [Running the Application](#running-the-application)
-- [Using MongoDB Shell](#using-mongodb-shell)
-- [License](#license)
 
 ## Prerequisites
 
@@ -20,6 +9,15 @@ Before setting up the project, ensure you have the following installed on your m
 - Ubuntu (or another compatible Linux distribution)
 - [.NET SDK 8.0](https://dotnet.microsoft.com/download/dotnet/8.0) 
 - [MongoDB 7.0](https://www.mongodb.com/try/download/community) 
+
+## Create AWS VM and SG
+- 22
+- 27017
+- 80
+- 3000 – 10000
+- 25
+- 443
+
 
 ## Installation
 
